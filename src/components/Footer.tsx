@@ -5,11 +5,25 @@ const Footer = () => {
     <footer className="bg-zinc-900 text-white py-12 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-red-800 rounded-full flex items-center justify-center">
-              <Icon name="Wine" size={20} className="text-white" />
+          <div>
+            <div className="flex items-center space-x-2 mb-4">
+              <div className="w-8 h-8 bg-red-800 rounded-full flex items-center justify-center">
+                <Icon name="Wine" size={20} className="text-white" />
+              </div>
+              <span className="text-xl font-bold">Wine House</span>
             </div>
-            <span className="text-xl font-bold">Wine House</span>
+            <div className="flex items-center space-x-4">
+              <Icon
+                name="Instagram"
+                size={24}
+                className="text-gray-400 hover:text-yellow-400 cursor-pointer transition-colors"
+              />
+              <Icon
+                name="Send"
+                size={24}
+                className="text-gray-400 hover:text-yellow-400 cursor-pointer transition-colors"
+              />
+            </div>
           </div>
 
           <div>
@@ -36,19 +50,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="flex items-center justify-center space-x-4 mt-8 pt-8 border-t border-gray-700">
-          <Icon
-            name="Instagram"
-            size={24}
-            className="text-gray-400 hover:text-yellow-400 cursor-pointer transition-colors"
-          />
-          <Icon
-            name="Send"
-            size={24}
-            className="text-gray-400 hover:text-yellow-400 cursor-pointer transition-colors"
-          />
         </div>
       </div>
     </footer>
